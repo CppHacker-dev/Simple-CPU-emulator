@@ -59,7 +59,7 @@ Prerequisites
     A C compiler (GCC, Clang, etc.).
     A binary file (asm.b) containing CPU instructions in the correct format.
 
-git clone https://github.com/Python63794/simple-cpu-emulator.git
+git clone https://github.com/CppHacker-dev/simple-cpu-emulator.git
 cd simple-cpu-emulator
 
 Compile the program using your C compiler:
@@ -92,8 +92,6 @@ Output
 Upon running the program, it prints the state of memory and registers after executing all instructions, as well as the program counter value.
 
 Example output:
-
-css
 
 Memory[0] = 0 
 Memory[1] = 0 
