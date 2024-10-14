@@ -59,12 +59,6 @@ Prerequisites
     A C compiler (GCC, Clang, etc.).
     A binary file (asm.b) containing CPU instructions in the correct format.
 
-Compilation
-
-    Clone the repository:
-
-    bash
-
 git clone https://github.com/Python63794/simple-cpu-emulator.git
 cd simple-cpu-emulator
 
