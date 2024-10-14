@@ -81,8 +81,6 @@ Example asm.b File
 
 Here is a simple example of the instruction set in a binary file (asm.b):
 
-graphql
-
 07 02 10  # LDM: Load 0x10 into memory address 0x02
 00 01 02  # LDR: Load memory[0x02] into register 1
 01 01 02  # ADD: Add memory[0x02] to register 1
