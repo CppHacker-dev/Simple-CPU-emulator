@@ -65,7 +65,7 @@ Compilation
 
     bash
 
-git clone https://github.com/your-username/simple-cpu-emulator.git
+git clone https://github.com/Python63794/simple-cpu-emulator.git
 cd simple-cpu-emulator
 
 Compile the program using your C compiler:
