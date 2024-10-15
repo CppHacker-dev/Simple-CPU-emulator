@@ -87,17 +87,14 @@ void execute(struct CPU *cpu){
             cpu->PC++;
             break;
         case 0x09: //NOP
-            printf("nop \n");
             cpu->PC++;
             break;
         case 0x0A: //INC
             cpu->registers[cpu->regnum] += 1;
-            printf("incremented \n");
             cpu->PC++;
             break;
         case 0x0B: //DEC
             cpu->registers[cpu->regnum] -= 1;
-            printf("decremented \n");
             cpu->PC++;
             break;
         case 0x0C: //MOV
