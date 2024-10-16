@@ -56,11 +56,11 @@ Example Instruction Encoding:
 How to Run
 Prerequisites
 
-    A C compiler (GCC, Clang, etc.).
-    A binary file (asm.b) containing CPU instructions in the correct format.
+A C compiler (GCC, Clang, etc.).
+A binary file (asm.b) containing CPU instructions in the correct format.
 
-git clone https://github.com/CppHacker-dev/simple-cpu-emulator.git
-cd simple-cpu-emulator
+    git clone https://github.com/CppHacker-dev/simple-cpu-emulator.git
+    cd simple-cpu-emulator
 
 Compile the program using your C compiler:
 
@@ -70,10 +70,10 @@ bash
 
 Running the Emulator
 
-    Make sure you have a binary instruction file (asm.b) in the same directory.
-    Run the emulator:
+Make sure you have a binary instruction file (asm.b) in the same directory.
+Run the emulator:
 
-    bash
+bash
 
     ./cpu_emulator
 
@@ -81,11 +81,11 @@ Example asm.b File
 
 Here is a simple example of the instruction set in a binary file (asm.b):
 
-07 02 10  # LDM: Load 0x10 into memory address 0x02
-00 01 02  # LDR: Load memory[0x02] into register 1
-01 01 02  # ADD: Add memory[0x02] to register 1
-0A 01     # INC: Increment register 1
-06        # HLT: Halt the program
+    07 02 10  # LDM: Load 0x10 into memory address 0x02
+    00 01 02  # LDR: Load memory[0x02] into register 1
+    01 01 02  # ADD: Add memory[0x02] to register 1
+    0A 01     # INC: Increment register 1
+    06        # HLT: Halt the program
 
 Output
 
