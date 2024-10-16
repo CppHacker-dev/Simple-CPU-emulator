@@ -106,7 +106,6 @@ void execute(struct CPU *cpu){
             break;
     }
 }
-
 int main(void){
     struct CPU cpu;
     reset(&cpu);
@@ -120,7 +119,6 @@ int main(void){
         printf("File not opened");
         return 1;
     }
-    
     while(fread(cmd, sizeof(uint8_t), 1, file) == 1){
         cpu.opcode = cmd[0];
         if(cpu.opcode == 0x05 || cpu.opcode == 0x09){
@@ -150,10 +148,7 @@ int main(void){
             execute(&cpu);
         }
     }
-    
     print(&cpu);
-
     fclose(file);
-    
     return 0;
 }
