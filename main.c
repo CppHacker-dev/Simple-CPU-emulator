@@ -26,6 +26,7 @@ void reset(struct CPU *cpu){
     }
     printf("reset \n");
     cpu->PC = 0;
+    cpu->destreg = 0;
 }
 
 void print(struct CPU *cpu){
