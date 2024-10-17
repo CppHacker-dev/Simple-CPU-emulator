@@ -1,6 +1,6 @@
 # Simple-CPU-emulator
 
-This is a simple cpu emulator
+This is a simple cpu emulator meant as a learning project
 
 This repository contains a simple CPU emulator written in C. The emulator mimics a minimalistic CPU architecture, consisting of registers, memory, and a set of basic instructions. The program reads binary-encoded assembly instructions from a file, executes them on the simulated CPU, and prints the state of the registers and memory.
 Features
