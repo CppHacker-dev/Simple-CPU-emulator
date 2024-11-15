@@ -102,6 +102,23 @@ void execute(struct CPU *cpu){
             cpu->registers[cpu->destreg] = cpu->registers[cpu->regnum];
             cpu->PC++;
             break;
+        case 0x0D: // AND
+            cpu->registers[cpu->regnum] &= cpu->memory[cpu->operand];
+            cpu->PC++;
+            break;
+        case 0x0E: // OR
+            cpu->registers[cpu->regnum] |= cpu->memory[cpu->operand];
+            cpu->PC++;
+            break;
+        case 0x0F: // XOR
+            cpu->registers[cpu->regnum] ^= cpu->memory[cpu->operand];
+            cpu->PC++;
+            break;
+        case 0x10: // NOT
+            cpu->registers[cpu->regnum] = ~cpu->registers[cpu->regnum];
+            cpu->PC++;
+            break;
+
         default:
             printf("Error: Unknown Instruction Opcode %02x\n", cpu->opcode);
             break;
