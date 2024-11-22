@@ -10,19 +10,23 @@ Features
         4 general-purpose 8-bit registers (REGISTER_NUMBER = 4).
         Program Counter (PC) to keep track of the current instruction.
     Instruction Set: The emulator supports a variety of operations, including:
-        LDR (0x00): Load a value from memory into a register.
-        ADD (0x01): Add a memory value to a register.
-        SUB (0x02): Subtract a memory value from a register.
-        MUL (0x03): Multiply a register by a memory value.
-        DIV (0x04): Divide a register by a memory value (error on division by zero).
-        RST (0x05): Reset the CPU (clear registers and memory).
-        HLT (0x06): Halt the CPU.
-        LDM (0x07): Load an immediate value into memory.
-        STM (0x08): Store a register value into memory.
-        NOP (0x09): No operation.
-        INC (0x0A): Increment a register.
-        DEC (0x0B): Decrement a register.
-        MOV (0x0C): Move the value of one register to another.
+    LDR (0x00): Load a value from memory into a register.
+    ADD (0x01): Add a memory value to a register.
+    SUB (0x02): Subtract a memory value from a register.
+    MUL (0x03): Multiply a register by a memory value.
+    DIV (0x04): Divide a register by a memory value (error on division by zero).
+    RST (0x05): Reset the CPU (clear registers and memory).
+    HLT (0x06): Halt the CPU.
+    LDM (0x07): Load an immediate value into memory.
+    STM (0x08): Store a register value into memory.
+    NOP (0x09): No operation.
+    INC (0x0A): Increment a register.
+    DEC (0x0B): Decrement a register.
+    MOV (0x0C): Move the value of one register to another.
+    OR  (0x10): Perform a bitwise OR between a register and a memory value.
+    XOR (0x11): Perform a bitwise XOR between a register and a memory value.
+    NOT (0x12): Perform a bitwise NOT on a register.
+
 
 File Structure
 
