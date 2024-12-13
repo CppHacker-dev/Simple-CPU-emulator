@@ -26,6 +26,7 @@ Features
     OR  (0x10): Perform a bitwise OR between a register and a memory value.
     XOR (0x11): Perform a bitwise XOR between a register and a memory value.
     NOT (0x12): Perform a bitwise NOT on a register.
+    AND (0x0D): Perform a bitwise AND on a register.
 
 
 File Structure
